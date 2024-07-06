@@ -8,7 +8,10 @@
 </div>
 
 开源免费，简单易用，图形界面, 速度极快的B站会员购辅助工具
-脚本原作者mikumifa，这个作者删号了，仓库也没了，这是备份，后续在这里更新
+
+脚本原作者mikumifa，这个作者删号了，仓库也没了。
+
+这是备份，后续在这里更新，贡献者也在此贡献就可以。如果原作者github账户恢复，联系我删掉这个仓库即可
 
 
 ## 快速安装
@@ -23,13 +26,15 @@
 > 这里有一份小白指南 [点我前往小白指南](https://github.com/mikumifa/biliTickerBuy/wiki/%E5%B0%8F%E7%99%BD%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%8D%97)
 
 ## 使用说明书
-重构了UI，启动终端第一行会显示
+启动终端第一行会显示
 
 ```
 Running on local URL:  http://127.0.0.1:xxx
 ```
 
-访问对应的网址即可
+访问对应的网址即可看到控制面板，修改参数即可
+
+（小白注意：windows终端需要按住ctrl，左键点击；如果是旧版的cmd则选中后右键复制。如何看自己是什么终端？如果有很多标签页就是新版；一个简单的命令窗口就是旧版）
 
 使用源码手动启动 `main.py` 时可带有如下参数：
 
@@ -52,7 +57,7 @@ Running on local URL:  http://127.0.0.1:xxx
 
 | 链接                                                      | 主要特色               |
 | --------------------------------------------------------- | ---------------------- |
-| https://github.com/bilibili-ticket/bilibili-ticket-python | 蹲回流票               |
+| https://github.com/bilibili-ticket/bilibili-ticket-python | 蹲回流票（删仓库了）               |
 | https://github.com/biliticket/BHYG                        | 多种抢票策略、支持代理 |
 
 ## 项目贡献者
@@ -66,6 +71,13 @@ Running on local URL:  http://127.0.0.1:xxx
                     <img src="https://avatars.githubusercontent.com/u/46997899?v=4" width="100;" alt="miaowuawa"/>
                     <br />
                     <sub><b>Miaowuawa</b></sub>
+                </a>
+            </td>
+	    <td align="center">
+                <a href="https://github.com/mikumifa">
+                    <img src="https://avatars.githubusercontent.com/u/99951454?v=4" width="100;" alt="mikumifa"/>
+                    <br />
+                    <sub><b>Mikumifa（号没了）</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -171,12 +183,16 @@ Running on local URL:  http://127.0.0.1:xxx
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mikumifa/biliTickerBuy&type=Date)](https://star-history.com/#mikumifa/biliTickerBuy&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=miaowuawa/BiliTicket&type=Date)](https://star-history.com/#miaowuawa/BiliTicket/&Date)
 
 ## 免责声明
 
 详见[MIT License](./LICENSE)，切勿进行盈利，所造成的后果与本人无关。
 
+B站如果需要给我发送律师函，可以发到miaowuawa@gmail.com
+
 ## 捐赠
 
-如果你想支持这个项目的话 [爱发电](https://afdian.net/a/mikumifa)
+如果你想支持这个项目原作者的话 [爱发电](https://afdian.net/a/mikumifa)
+
+我（Miaowuawa，备份仓库的人）不需要捐赠，所以就不贴自己的爱发电链接了，大家支持一下原作者
