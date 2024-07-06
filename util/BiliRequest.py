@@ -38,8 +38,8 @@ class BiliRequest:
     def get_request_name(self):
         try:
             if not self.cookieManager.have_cookies():
-                return "未登录"
+                return "未登录或登录信息已失效"
             result = self.get("https://api.bilibili.com/x/web-interface/nav").json()
             return result["data"]["uname"]
         except Exception as e:
-            return "未登录"
+            return "未登录或登录信息已失效"

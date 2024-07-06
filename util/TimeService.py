@@ -14,19 +14,26 @@ class TimeService:
         """
         返回的timeoffset单位为秒
         """
-        # NTP时间请求有可能会超时失败, 设定三次重试机会
-        for i in range(0, 3):
-            try:
-                response = self.client.request(self.ntp_server, version=4)
-                break
-            except Exception as e:
-                logger.warning("第" + str(i + 1) + "次获取NTP时间失败, 尝试重新获取")
-                if i == 2:
-                    return "error"
-                time.sleep(0.5)
-        logger.info("时间同步成功, 将使用" + self.ntp_server + "时间")
-        # response.offset 为[NTP时钟源 - 设备时钟]的偏差, 使用时需要取反
-        return format(-(response.offset), ".5f")
+        #请求五次，获得一个平均的offset
+        avg_offset = 0.0
+        for j in range(0, 5):
+            # NTP时间请求有可能会超时失败, 设定三次重试机会
+            for i in range(0, 3):
+                try:
+                    response = self.client.request(self.ntp_server, version=4)
+                    avg_offset = avg_offset + response.offset
+                    break
+                except Exception as e:
+                    logger.warning("第" + str(i + 1) + "次获取NTP时间失败, 尝试重新获取")
+                    if i == 2:
+                        return "error"
+                    time.sleep(0.5)
+            avg_offset = avg_offset / 5
+
+            logger.info("时间同步成功, 将使用" + self.ntp_server + "时间，平均延迟为：" + str(avg_offset) + "秒")
+
+            # offset 为[NTP时钟源 - 设备时钟]的偏差, 使用时需要取反
+            return format(-(avg_offset), ".5f")
 
     def set_timeoffset(self, _timeoffset: str) -> None:
         """
