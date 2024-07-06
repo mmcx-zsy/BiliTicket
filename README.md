@@ -4,21 +4,17 @@
   </a>
   <h1 id="koishi">biliTickerBuy</h1>
 
-![GitHub all releases](https://img.shields.io/github/downloads/mikumifa/biliTickerBuy/total)
-![GitHub release (with filter)](https://img.shields.io/github/v/release/mikumifa/biliTickerBuy)
-![GitHub issues](https://img.shields.io/github/issues/mikumifa/biliTickerBuy)
-![GitHub Repo stars](https://img.shields.io/github/stars/mikumifa/biliTickerBuy)
 
 </div>
 
 开源免费，简单易用，图形界面, 速度极快的B站会员购辅助工具
+脚本原作者mikumifa，这个作者删号了，仓库也没了，这是备份，后续在这里更新
 
 
 ## 快速安装
-
-Windows 下载最新的release文件 (bilibili-buy.zip) [下载链接](https://github.com/mikumifa/biliTickerBuy/releases) 
-
-MacOS,linux,电脑版本不支持本地验证码请使用 [docker部署](https://github.com/mikumifa/biliTickerBuy/wiki/linux%E5%92%8CMacOS%E7%9A%84%E8%BF%90%E8%A1%8C%E6%96%B9%E5%BC%8F-%EF%BC%88%E4%BD%BF%E7%94%A8docker)
+- git clone本仓库
+- 使用终端运行./main.py
+- 提示Running on local URL:  http://127.0.0.1:xxx 后 打开此链接进入web控制界面
  
 > **NOTE**
 >
