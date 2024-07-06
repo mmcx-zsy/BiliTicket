@@ -73,13 +73,6 @@ Running on local URL:  http://127.0.0.1:xxx
                     <sub><b>Miaowuawa</b></sub>
                 </a>
             </td>
-	    <td align="center">
-                <a href="https://github.com/mikumifa">
-                    <img src="https://avatars.githubusercontent.com/u/99951454?v=4" width="100;" alt="mikumifa"/>
-                    <br />
-                    <sub><b>Mikumifa（号没了）</b></sub>
-                </a>
-            </td>
             <td align="center">
                 <a href="https://github.com/gpc123456">
                     <img src="https://avatars.githubusercontent.com/u/78298238?v=4" width="100;" alt="gpc123456"/>
